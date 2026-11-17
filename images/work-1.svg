@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141419" />
+      <stop offset="100%" stop-color="#2a0f1d" />
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f28" />
+      <stop offset="100%" stop-color="#2c1a29" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff004f" />
+      <stop offset="100%" stop-color="#ff416c" />
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg1)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="530" cy="70" r="120" fill="#ff004f" opacity="0.12" filter="blur(40px)"/>
+  <circle cx="80" cy="340" r="100" fill="#ff416c" opacity="0.08" filter="blur(30px)"/>
+
+  <!-- Browser / App Mockup Window -->
+  <g filter="url(#shadow1)">
+    <rect x="40" y="35" width="520" height="330" rx="12" fill="#181820" stroke="#333342" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <rect x="40" y="35" width="520" height="38" rx="12" fill="#20202c"/>
+    <rect x="40" y="60" width="520" height="13" fill="#20202c"/>
+    <!-- Window controls -->
+    <circle cx="62" cy="54" r="5" fill="#ff5f56"/>
+    <circle cx="78" cy="54" r="5" fill="#ffbd2e"/>
+    <circle cx="94" cy="54" r="5" fill="#27c93f"/>
+
+    <text x="120" y="58" fill="#8e8ea0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">civic-report.gov.in/portal</text>
+
+    <!-- Hackathon Winner Badge -->
+    <rect x="365" y="44" width="180" height="20" rx="10" fill="#ff004f" opacity="0.2"/>
+    <rect x="365" y="44" width="180" height="20" rx="10" fill="none" stroke="#ff004f" stroke-width="1"/>
+    <text x="455" y="58" fill="#ff4d79" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">🏆 1ST PRIZE HACKATHON</text>
+
+    <!-- App Content Layout -->
+    <!-- Sidebar -->
+    <rect x="55" y="88" width="115" height="260" rx="8" fill="#14141c"/>
+    <!-- Sidebar items -->
+    <rect x="65" y="105" width="95" height="24" rx="6" fill="#ff004f" opacity="0.25"/>
+    <rect x="72" y="114" width="12" height="6" rx="2" fill="#ff004f"/>
+    <text x="92" y="121" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Dashboard</text>
+
+    <rect x="65" y="137" width="95" height="22" rx="4" fill="transparent"/>
+    <text x="92" y="152" fill="#8e8ea0" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Complaints</text>
+
+    <rect x="65" y="167" width="95" height="22" rx="4" fill="transparent"/>
+    <text x="92" y="182" fill="#8e8ea0" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Status Track</text>
+
+    <rect x="65" y="197" width="95" height="22" rx="4" fill="transparent"/>
+    <text x="92" y="212" fill="#8e8ea0" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Analytics</text>
+
+    <!-- Main Content Area -->
+    <!-- Metrics Row -->
+    <rect x="185" y="90" width="110" height="60" rx="8" fill="url(#cardGrad1)" stroke="#3a2536" stroke-width="1"/>
+    <text x="198" y="110" fill="#a0a0b5" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">Active Reports</text>
+    <text x="198" y="136" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">1,248</text>
+
+    <rect x="305" y="90" width="115" height="60" rx="8" fill="url(#cardGrad1)" stroke="#3a2536" stroke-width="1"/>
+    <text x="318" y="110" fill="#a0a0b5" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">Resolved Rate</text>
+    <text x="318" y="136" fill="#27c93f" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">94.8%</text>
+
+    <rect x="430" y="90" width="115" height="60" rx="8" fill="url(#cardGrad1)" stroke="#3a2536" stroke-width="1"/>
+    <text x="443" y="110" fill="#a0a0b5" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">Avg Resolution</text>
+    <text x="443" y="136" fill="#ff004f" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">24 hrs</text>
+
+    <!-- Recent Grievances Table -->
+    <rect x="185" y="162" width="360" height="184" rx="8" fill="#14141c" stroke="#2c2c3a" stroke-width="1"/>
+    <text x="202" y="186" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Recent Civic Grievances</text>
+
+    <!-- Table Rows -->
+    <!-- Row 1 -->
+    <rect x="198" y="200" width="334" height="34" rx="6" fill="#1f1f2c"/>
+    <circle cx="215" cy="217" r="4" fill="#ff004f"/>
+    <text x="228" y="221" fill="#e2e2ec" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Street Lighting Fault #412</text>
+    <rect x="450" y="208" width="70" height="18" rx="9" fill="#27c93f" opacity="0.2"/>
+    <text x="485" y="221" fill="#27c93f" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">RESOLVED</text>
+
+    <!-- Row 2 -->
+    <rect x="198" y="242" width="334" height="34" rx="6" fill="#1b1b26"/>
+    <circle cx="215" cy="259" r="4" fill="#ffbd2e"/>
+    <text x="228" y="263" fill="#e2e2ec" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Road Restoration - Anna Nagar</text>
+    <rect x="450" y="250" width="70" height="18" rx="9" fill="#ffbd2e" opacity="0.2"/>
+    <text x="485" y="263" fill="#ffbd2e" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">IN PROGRESS</text>
+
+    <!-- Row 3 -->
+    <rect x="198" y="284" width="334" height="34" rx="6" fill="#1f1f2c"/>
+    <circle cx="215" cy="301" r="4" fill="#ff416c"/>
+    <text x="228" y="305" fill="#e2e2ec" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Water Pipeline Maintenance</text>
+    <rect x="450" y="292" width="70" height="18" rx="9" fill="#ff004f" opacity="0.2"/>
+    <text x="485" y="305" fill="#ff4d79" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">NEW</text>
+  </g>
+</svg>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Anas M H | Aspiring Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=2.0">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- ----------------- HEADER ----------------- -->
+    <div id="header">
+        <div class="header-bg" id="headerBg"></div>
+        <div class="container header-container">
+            <nav>
+                <a href="#header" class="logo-link">
+                    <img src="images/name_logo.jpeg" alt="Mohammed Anas Logo" class="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" id="headerText">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Mohammed Anas</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- ABOUT ----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about-img-box">
+                        <img src="images/about_pic.jpeg" alt="Mohammed Anas Profile">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-desc">
+                        Motivated Computer and Communication Engineering student at <strong>Rajalakshmi Institute of
+                            Technology</strong> aspiring to become a Full Stack Developer. Eager to apply programming
+                        knowledge, develop practical web applications, and contribute to real-world software projects
+                        with a passion for clean architecture and intuitive user experiences.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><i class="fa-solid fa-code"></i> Programming</span><br>
+                                C, Python, Java
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-laptop-code"></i> Web Development</span><br>
+                                HTML5, CSS3, JavaScript
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-database"></i> Database</span><br>
+                                SQL (Relational Database Design)
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Environment</span><br>
+                                Git, GitHub, VS Code
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-language"></i> Languages</span><br>
+                                Tamil, English, Malayalam
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2024 – 2028</span><br>
+                                <strong>B.E. Computer &amp; Communication Engineering</strong><br>
+                                Rajalakshmi Institute of Technology — <span class="highlight-text">CGPA: 8.12</span>
+                            </li>
+                            <li>
+                                <span>School Academics</span><br>
+                                <strong>Higher Secondary &amp; Secondary Education</strong><br>
+                                Scored above <span class="highlight-text">85%</span> in school academics
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications Tab -->
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li>
+                                <span>COGTIS Technologies Pvt. Ltd.</span><br>
+                                Master in C Programming &amp; Master in Python Programming
+                            </li>
+                            <li>
+                                <span>CCBP 4.0 Academy, NxtWave</span><br>
+                                Build Your Own Responsive Website
+                            </li>
+                            <li>
+                                <span>CCBP 4.0 Academy, NxtWave</span><br>
+                                Build Your Own Static Website
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievements Tab -->
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li>
+                                <span>🏆 First Prize Winner</span><br>
+                                SIMATS Engineering College Hackathon for <strong>Civic Report Platform</strong>
+                            </li>
+                            <li>
+                                <span>💡 Hackathons &amp; Innovation</span><br>
+                                Active participant and competitive coder across multiple college hackathons
+                            </li>
+                            <li>
+                                <span>⭐ Academic Excellence</span><br>
+                                Current CGPA: <strong>8.12</strong> | High distinction throughout academic career
+                            </li>
+                            <li>
+                                <span>🎨 Interests &amp; Hobbies</span><br>
+                                Drawing, Watching Movies, Solving Puzzles
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- SERVICES ----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Designing and developing modern, responsive, and performance-optimized websites using clean
+                        HTML5, CSS3, and dynamic JavaScript across all devices.</p>
+                    <a href="#portfolio">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Full Stack Solutions</h2>
+                    <p>Creating functional web applications integrating front-end interfaces with structured SQL
+                        databases and clean backend logic like Campus OS and complaint platforms.</p>
+                    <a href="#portfolio">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Software &amp; Logic</h2>
+                    <p>Developing efficient algorithms and problem-solving software in C, Python, and Java. Rapid
+                        prototyping in competitive hackathons to address real-world challenges.</p>
+                    <a href="#portfolio">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- PORTFOLIO ----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Project 1: Civic Report Platform -->
+                <div class="work">
+                    <img src="images/work-1.svg" alt="Civic Report Platform">
+                    <div class="layer">
+                        <h3>Civic Report Platform</h3>
+                        <p>🏆 1st Prize Winner at SIMATS Hackathon. An application that enables people to raise civic
+                            complaints directly without having to meet officials in person.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Campus OS -->
+                <div class="work">
+                    <img src="images/work-2.svg" alt="Campus OS">
+                    <div class="layer">
+                        <h3>Campus OS</h3>
+                        <p>A comprehensive college management system designed to support academic-related activities,
+                            courses, attendance, and student operations.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: CGPA Calculator -->
+                <div class="work">
+                    <img src="images/work-3.svg" alt="CGPA Calculator">
+                    <div class="layer">
+                        <h3>CGPA Calculator</h3>
+                        <p>A web-based tool that helps engineering students compute, forecast, and monitor their
+                            semester and cumulative GPA easily.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable Extra Projects -->
+            <div class="work-list" id="extra-work" style="display: none; margin-top: 40px;">
+                <!-- Project 4: Modern Calculator -->
+                <div class="work">
+                    <img src="images/work-4.svg" alt="Modern Calculator">
+                    <div class="layer">
+                        <h3>Modern Calculator</h3>
+                        <p>A user-friendly, responsive calculator designed to perform basic and daily mathematical
+                            operations with a smooth aesthetic interface.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Responsive Landing Page -->
+                <div class="work">
+                    <img src="images/work-5.svg" alt="Responsive Landing Page">
+                    <div class="layer">
+                        <h3>Responsive Landing Page</h3>
+                        <p>A responsive webpage designed to provide a clean, engaging, and user-friendly browsing
+                            experience across desktop, tablet, and mobile screens.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Personal Portfolio Website -->
+                <div class="work">
+                    <img src="images/work-6.svg" alt="Personal Portfolio Website">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal portfolio website showcasing academic credentials, technical skills,
+                            certifications, and hands-on projects.</p>
+                        <a href="https://github.com/anas1627" target="_blank" title="View Project on GitHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#portfolio" class="btn" id="see-more-btn" onclick="toggleWork(event)">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------- CONTACT ----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a
+                            href="mailto:mohammedanas1627@gmail.com">mohammedanas1627@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+919486593018">+91 9486593018</a></p>
+                    <div class="social-icons">
+                        <a href="https://github.com/anas1627" target="_blank" title="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-anas-mh" target="_blank" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:mohammedanas1627@gmail.com" title="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="resume.html" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2026 Mohammed Anas M H. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <!-- ----------------- JAVASCRIPT ----------------- -->
+    <script>
+        // About Tab Switching Logic
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile Menu Drawer Logic
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // See More / See Less Projects Toggle
+        function toggleWork(event) {
+            event.preventDefault();
+            var extraWork = document.getElementById("extra-work");
+            var btn = document.getElementById("see-more-btn");
+            if (extraWork.style.display === "none") {
+                extraWork.style.display = "grid";
+                btn.innerText = "See less";
+            } else {
+                extraWork.style.display = "none";
+                btn.innerText = "See more";
+            }
+        }
+
+        // Contact Form Submission Handler
+        // Optional: Replace scriptURL with your Google Sheets Apps Script Web App URL from the tutorial
+        const scriptURL = '';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            if (scriptURL && scriptURL.trim() !== '') {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully!";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        msg.innerHTML = "Error submitting form. Please try again.";
+                    });
+            } else {
+                // Friendly immediate feedback if no backend URL is set yet
+                msg.innerHTML = "Thank you! Your message has been sent successfully.";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            }
+        }
+
+        // --- PARALLAX EFFECT (SMOOTH SCROLL + 3D MOUSE DEPTH) ---
+        (function initParallax() {
+            const header = document.getElementById("header");
+            const headerBg = document.getElementById("headerBg");
+            const headerText = document.getElementById("headerText");
+            if (!header || !headerBg) return;
+
+            let targetMouseX = 0;
+            let targetMouseY = 0;
+            let currentMouseX = 0;
+            let currentMouseY = 0;
+
+            let targetScrollY = window.pageYOffset || document.documentElement.scrollTop;
+            let currentScrollY = targetScrollY;
+
+            const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // Interactive 3D Mouse Parallax on Desktop
+            if (!isTouch && !prefersReducedMotion) {
+                header.addEventListener("mousemove", (e) => {
+                    const rect = header.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width - 0.5;
+                    const y = (e.clientY - rect.top) / rect.height - 0.5;
+                    targetMouseX = -x * 22; // subtle background shift opposite to mouse
+                    targetMouseY = -y * 16;
+                }, { passive: true });
+
+                header.addEventListener("mouseleave", () => {
+                    targetMouseX = 0;
+                    targetMouseY = 0;
+                }, { passive: true });
+            }
+
+            // Scroll Parallax tracking
+            window.addEventListener("scroll", () => {
+                targetScrollY = window.pageYOffset || document.documentElement.scrollTop;
+            }, { passive: true });
+
+            // Fluid 60fps/120fps Animation Loop with linear interpolation
+            function renderParallax() {
+                const headerHeight = header.offsetHeight;
+
+                if (targetScrollY < headerHeight + 100) {
+                    currentMouseX += (targetMouseX - currentMouseX) * 0.08;
+                    currentMouseY += (targetMouseY - currentMouseY) * 0.08;
+                    currentScrollY += (targetScrollY - currentScrollY) * 0.1;
+
+                    // Parallax depth offset factors
+                    const bgScrollOffset = currentScrollY * 0.36;
+                    const textScrollOffset = currentScrollY * 0.16;
+                    const textOpacity = Math.max(0, 1 - (currentScrollY / (headerHeight * 0.75)));
+
+                    headerBg.style.transform = `translate3d(${currentMouseX.toFixed(2)}px, ${(currentMouseY + bgScrollOffset).toFixed(2)}px, 0)`;
+
+                    if (headerText) {
+                        const textMouseX = -currentMouseX * 0.45;
+                        const textMouseY = -currentMouseY * 0.45;
+                        headerText.style.transform = `translate3d(${textMouseX.toFixed(2)}px, ${(textMouseY + textScrollOffset).toFixed(2)}px, 0)`;
+                        headerText.style.opacity = textOpacity.toFixed(2);
+                    }
+                }
+
+                requestAnimationFrame(renderParallax);
+            }
+
+            renderParallax();
+        })();
+    </script>
+</body>
+
+</html>

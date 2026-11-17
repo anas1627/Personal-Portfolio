@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141824" />
+      <stop offset="100%" stop-color="#192036" />
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bg5)"/>
+  <circle cx="450" cy="120" r="120" fill="#ff004f" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- Desktop Device Preview -->
+  <g filter="url(#shadow5)">
+    <rect x="50" y="50" width="370" height="250" rx="10" fill="#1e2235" stroke="#333956" stroke-width="1.5"/>
+    <!-- Topbar -->
+    <rect x="50" y="50" width="370" height="30" rx="10" fill="#252b42"/>
+    <circle cx="68" cy="65" r="4" fill="#ff5f56"/>
+    <circle cx="80" cy="65" r="4" fill="#ffbd2e"/>
+    <circle cx="92" cy="65" r="4" fill="#27c93f"/>
+
+    <!-- Hero Content -->
+    <rect x="75" y="100" width="180" height="16" rx="4" fill="#ff004f"/>
+    <rect x="75" y="125" width="220" height="10" rx="3" fill="#6c7499"/>
+    <rect x="75" y="142" width="160" height="10" rx="3" fill="#4d5373"/>
+    
+    <rect x="75" y="170" width="85" height="26" rx="6" fill="#ff004f"/>
+    <text x="117" y="187" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Explore Now</text>
+
+    <!-- Cards preview inside desktop -->
+    <rect x="75" y="215" width="80" height="65" rx="6" fill="#29304a"/>
+    <rect x="170" y="215" width="80" height="65" rx="6" fill="#29304a"/>
+    <rect x="265" y="215" width="80" height="65" rx="6" fill="#29304a"/>
+  </g>
+
+  <!-- Mobile Device Overlaid -->
+  <g filter="url(#shadow5)">
+    <rect x="390" y="110" width="150" height="250" rx="18" fill="#151722" stroke="#484f73" stroke-width="2"/>
+    <rect x="440" y="118" width="50" height="6" rx="3" fill="#2d334d"/>
+    
+    <!-- Mobile Screen -->
+    <rect x="402" y="135" width="126" height="210" rx="10" fill="#1f2335"/>
+    <rect x="412" y="148" width="80" height="12" rx="3" fill="#ff004f"/>
+    <rect x="412" y="168" width="106" height="8" rx="2" fill="#757d9e"/>
+    <rect x="412" y="182" width="80" height="8" rx="2" fill="#585f80"/>
+
+    <rect x="412" y="200" width="60" height="18" rx="4" fill="#ff004f"/>
+    <text x="442" y="213" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="700" text-anchor="middle">Action</text>
+
+    <rect x="412" y="230" width="106" height="40" rx="4" fill="#2a3047"/>
+    <rect x="412" y="280" width="106" height="40" rx="4" fill="#2a3047"/>
+  </g>
+</svg>

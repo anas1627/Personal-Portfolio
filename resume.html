@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Anas M H - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            padding: 30px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2b3a4a;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            color: #1a2a3a;
+            margin-bottom: 6px;
+        }
+
+        .header .subtitle {
+            font-size: 15px;
+            font-weight: 700;
+            color: #0d826a;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            font-size: 13.5px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            color: #0d826a;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1.7fr;
+            gap: 35px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: #1a2a3a;
+            border-bottom: 1.5px solid #1a2a3a;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            margin-top: 18px;
+        }
+
+        .left-col .section-title:first-child,
+        .right-col .section-title:first-child {
+            margin-top: 0;
+        }
+
+        .skill-group {
+            margin-bottom: 12px;
+        }
+
+        .skill-group h4 {
+            font-size: 13.5px;
+            color: #2b3a4a;
+            margin-bottom: 3px;
+        }
+
+        .skill-group p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .edu-item,
+        .proj-item,
+        .cert-item {
+            margin-bottom: 14px;
+        }
+
+        .edu-item h4,
+        .proj-item h4 {
+            font-size: 14px;
+            color: #1a2a3a;
+            margin-bottom: 2px;
+        }
+
+        .edu-item p,
+        .proj-item p,
+        .cert-item p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        .edu-meta {
+            font-size: 12.5px;
+            color: #777;
+            margin-bottom: 3px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e6f4f1;
+            color: #0d826a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        ul.custom-list {
+            padding-left: 18px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        ul.custom-list li {
+            margin-bottom: 6px;
+        }
+
+        .footer-bar {
+            margin-top: 30px;
+            background: #f0f4f8;
+            padding: 12px 20px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12.5px;
+            color: #444;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .print-btn {
+            display: block;
+            margin: 0 auto 20px auto;
+            background: #ff004f;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+    <div class="resume-container">
+        <header class="header">
+            <h1>MOHAMMED ANAS M H</h1>
+            <div class="subtitle">ASPIRING FULL STACK DEVELOPER</div>
+            <div class="contact-info">
+                <span>📞 +91 9486593018</span>
+                <span>✉️ <a href="mailto:mohammedanas1627@gmail.com">mohammedanas1627@gmail.com</a></span>
+                <span>💻 GitHub: <a href="https://github.com/anas1627" target="_blank">anas1627</a></span>
+                <span>🔗 LinkedIn: <a href="https://linkedin.com/in/mohammed-anas-mh"
+                        target="_blank">mohammed-anas-mh</a></span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-col">
+                <div class="section-title">Technical Skills</div>
+                <div class="skill-group">
+                    <h4>Programming</h4>
+                    <p>C, Python, Java</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Web Development</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Database</h4>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Tools</h4>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+
+                <div class="section-title">Education</div>
+                <div class="edu-item">
+                    <h4>B.E. Computer &amp; Communication Engineering</h4>
+                    <p class="edu-meta">Rajalakshmi Institute of Technology</p>
+                    <p class="edu-meta">2024 – 2028</p>
+                    <div class="badge">CGPA: 8.12</div>
+                </div>
+
+                <div class="section-title">Certifications</div>
+                <div class="cert-item">
+                    <p><strong>• Master in C Programming</strong><br>COGTIS Technologies Pvt. Ltd.</p>
+                </div>
+                <div class="cert-item">
+                    <p><strong>• Master in Python Programming</strong><br>COGTIS Technologies Pvt. Ltd.</p>
+                </div>
+                <div class="cert-item">
+                    <p><strong>• Build Your Own Responsive Website</strong><br>CCBP 4.0 Academy, NxtWave</p>
+                </div>
+                <div class="cert-item">
+                    <p><strong>• Build Your Own Static Website</strong><br>CCBP 4.0 Academy, NxtWave</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-col">
+                <div class="section-title">Career Objective</div>
+                <p style="font-size: 13.5px; color: #555; line-height: 1.5; margin-bottom: 16px;">
+                    Motivated Computer and Communication Engineering student aspiring to become a Full Stack Developer.
+                    Eager to apply programming knowledge, develop practical web applications and contribute to
+                    real-world software projects.
+                </p>
+
+                <div class="section-title">Projects</div>
+                <div class="proj-item">
+                    <h4>1. Campus OS</h4>
+                    <p>A college management system designed to support academic-related activities.</p>
+                </div>
+                <div class="proj-item">
+                    <h4>2. Civic Report Platform</h4>
+                    <p>An application that enables people to raise civic complaints without having to meet officials in
+                        person.</p>
+                </div>
+                <div class="proj-item">
+                    <h4>3. CGPA Calculator</h4>
+                    <p>A web-based tool that helps students calculate their CGPA easily.</p>
+                </div>
+
+                <div class="proj-item">
+                    <h4>4. Personal Portfolio Website</h4>
+                    <p>A personal website showcasing academic details, technical skills and projects.</p>
+                </div>
+
+
+                <div class="section-title">Achievements</div>
+                <ul class="custom-list">
+                    <li><strong>First Prize</strong> – SIMATS Engineering College Hackathon for Civic Report Platform.
+                    </li>
+                    <li>Participated in multiple hackathons.</li>
+                    <li>Scored above 85% in school academics.</li>
+                    <li>Current CGPA: 8.12.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <div><strong>Languages:</strong> Tamil • English • Malayalam</div>
+            <div><strong>Hobbies:</strong> Drawing • Watching Movies • Solving Puzzles</div>
+        </div>
+    </div>
+</body>
+
+</html>
